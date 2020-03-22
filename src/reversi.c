@@ -31,7 +31,8 @@ static move_t (*player_used[5]) (board_t *) =
 static void
 help ()
 {
-    printf ("\nUsage: reversi [-s SIZE|-b[N]|-w[N]|-c[N]|-v|-V|-h] [FILE]"
+    printf ("\n**************** Welcome to the reversi Game *****************\n"
+            "\nUsage: reversi [-s SIZE|-b[N]|-w[N]|-c[N]|-v|-V|-h] [FILE]"
             "\nPlay a reversi game with human or program players.\n"
             "  -s, --size SIZE\tboard size (min=1, max=5 (default: 4))\n"
             "  -b, --black-ai [N]\tset tactic of black player (default: 0)\n"
@@ -43,11 +44,15 @@ help ()
             "  -V, --version\t\tdisplay version and exit\n"
             "  -h, --help\t\tdisplay this help and exit\n"
             "\nTactic list:    \tSize list:\n"
-            "  human (0)       \t  1 : 2x2\n"
-            "  random (1)      \t  2 : 4x4\n"
-            "  minimax (2)     \t  3 : 6x6\n"
-            "  alpha/beta (3)  \t  4 : 8x8\n"
-            "  Newton (4)      \t  5 : 10x10\n\n");
+            "  0 : human       \t  1 : 2x2\n"
+            "  1 : random      \t  2 : 4x4\n"
+            "  2 : minimax     \t  3 : 6x6\n"
+            "  3 : alpha/beta  \t  4 : 8x8\n"
+            "  4 : Newton      \t  5 : 10x10\n\n"
+            "Example : ./reversi -s3 -b4 -w1 -v \n"
+            "          for a 6x6 size, white human and black AI Newton with\n"
+            "          verbose mode.\n\n"
+            "************************* ENJOY =) *************************\n\n");
 }
 
 /* Print the version of this program. */
