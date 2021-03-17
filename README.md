@@ -5,7 +5,7 @@
 
 This software permit to play at the reversi game as two players: black & white.
 
-You can choose to play with an other person or an AI (buy select the AI that you
+You can choose to play with an other person or an AI (by select the AI that you
 want).
 By default the black and white players are human (option 0).
 You have four AIs availables in this software by increasing order of difficulty:
